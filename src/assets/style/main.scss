@@ -1,5 +1,5 @@
-@use './partials/mixins.scss';
-@use './partials/variables.scss';
+@use './partials/mixins' as *;
+@use './partials/variables' as *;
 
 $fa-font-path: '../webfonts';
 @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
@@ -11,5 +11,10 @@ $fa-font-path: '../webfonts';
 .debug{
     border: 1px solid black;
     min-height: 100px;
+}
+
+.wrapper{
+    width: 60%;
+    margin: 0 auto;
 }
 
