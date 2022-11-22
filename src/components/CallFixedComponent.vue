@@ -1,32 +1,62 @@
 <template>
-    <div class="circle">
-        <i class="fa-solid fa-phone"></i>
+
+    <div>
+    
+        <p class="circle">
+            <i data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="fa-solid fa-phone"></i>
+        </p>
+        <div class="operatore">
+        
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body text-center">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <p><b>John Smith</b></p>
+                    <p>+4684541454</p>
+                </div>
+            </div>
+        </div>
     </div>
+  
 </template>
 
 <script>
+
     export default {
-        name: 'CallFixedComponent'
+        name: 'CallFixedComponent',
+        data() {
+            return {
+                
+            }
+        },
     }
 </script>
 
 <style lang="scss" scoped>
-    .circle{
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        box-shadow: 5px 5px 5px 0 #888888;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        left: 10px;
-        top: 450px;
-        cursor: pointer;
-        background-color: white;
-        i{
-            color: #fdca27;
-            font-size: 30px;
-        }
+
+.circle{
+    position: fixed;
+    left: 10px;
+    top: 450px;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.5);
+    i{
+        font-size: 40px;
+        color: #fdca27;
     }
+}
+
+.operatore{
+    position: fixed;
+    left: 10px;
+    top: 310px;
+    box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.5);
+}
+
+   
 </style>

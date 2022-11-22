@@ -16,11 +16,12 @@
                         <li class="fs-12">{{link}}</li>
                     </ul>
                 </div>
+                <div class="col-1"></div>
                 <div class="col">
                     <div class="row row-cols-2">
                         <div class="col" v-for="(item,index) in store.arrayServicesList" :key="index">
                             <div>
-                                <img src="../assets/img/mt-2236-home-icon2.png" alt="">
+                                <img :src="item.icon" alt="">
                                 <p><b>{{item.title}}</b></p>
                                 <p class="fs-12">{{item.text}}</p>
                             </div>
@@ -31,7 +32,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col"> <div class="col"><button class="enroll">Learn More</button></div></div>
+        <div class="col"> <div class="col"><button class="yellow-button">Learn More</button></div></div>
     </div>
 </template>
 
@@ -49,28 +50,15 @@
 
 <style lang="scss" scoped>
 
-.enroll{
-        background-color: #fdca27;
-        color: #0d1219;
-        border: none;
-        margin-right: 20px;
-        font-size: small;
-        border-radius: 5px;
-        padding: 5px 20px;
-    }
-
-    .enroll:hover{
-        background-color: #514f51;
-        color: #ffffff;
-        transition: 0.5s;
-    }
 
     img{
-        width: 20%;
+        width: 50px;
+        height: 50px;
     }
 
     ul{
         margin-left: -20px;
+        margin-bottom: 9px;
     }
 
     li{
@@ -82,7 +70,7 @@
         content: '';
         display: inline-block;
         width: 10px;
-        height: 15px;
+        height: 12px;
         background-image: url(../assets/img/mt-2236-home-icon-bullet.png);
         margin-right: 5px;
     }

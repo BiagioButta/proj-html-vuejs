@@ -1,7 +1,9 @@
 <template>
     <div class="row">
         <div class="col" v-for="(image,index) in store.arrayImg" :key="index">
+            
             <img id="myImg" :src="image" alt="">
+           
         </div>
         <div id="myModal" class="modal">
             <span class="close">&times;</span>
@@ -33,7 +35,10 @@
 
     img{
         width: 100%;
-        height: 100px;
+    }
+
+    .col{
+        padding: 0;
     }
 
 </style>

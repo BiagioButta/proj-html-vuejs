@@ -20,11 +20,17 @@ $fa-font-path: '../webfonts';
     margin: 0 auto;
 }
 
+.fixed-navbar{
+    position: sticky;
+    top: 0;
+}
+
 // buttons
 
 button{
     border-radius: 5px;
     padding: 5px 20px;
+    font-size: 12px;
 }
 
 .yellow-button{
