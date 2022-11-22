@@ -8,6 +8,7 @@ $fa-font-path: '../webfonts';
 
 @import 'bootstrap/scss/bootstrap';
 
+
 .debug{
     border: 1px solid black;
     min-height: 100px;
@@ -18,3 +19,43 @@ $fa-font-path: '../webfonts';
     margin: 0 auto;
 }
 
+.font-size-xsmall{
+    font-size: x-small;
+}
+
+.font-size-small{
+    font-size: small;
+}
+
+button{
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.learn{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: small;
+}
+
+.learn:hover{
+    background-color: #fdca27;
+    color: #0d1219;
+    border: 1px solid #fdca27;
+    transition: 0.5s;
+}
+
+.enroll{
+    background-color: #fdca27;
+    color: #0d1219;
+    border: none;
+    margin-right: 20px;
+    font-size: small;
+}
+
+.enroll:hover{
+    background-color: #514f51;
+    color: #ffffff;
+    transition: 0.5s;
+}
