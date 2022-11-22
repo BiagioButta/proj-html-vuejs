@@ -5,9 +5,9 @@
         </div>
         
         <div class="col d-flex justify-content-end">
-            <ul v-for="(link,index) in linksMenu" :key="index" class="font-size-xsmall">
+            <ul v-for="(link,index) in store.linksMenu" :key="index" class="font-size-xsmall">
                 <li>
-                    <a href="#">{{link}}</a>
+                    <a href="https://www.motocms.com/website-templates/demo/186841.html">{{link}}</a>
                 </li>
             </ul>
         </div>
@@ -15,11 +15,13 @@
 </template>
 
 <script>
+    import { store } from '../store';
     export default {
+        
         name: 'NavbarComponent',
         data() {
             return {
-                linksMenu: ['Menù', 'Services', 'Courses', 'About', 'FAQ', 'Blog', 'Contact']
+                store
             }
         },
     }

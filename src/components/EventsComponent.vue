@@ -1,31 +1,22 @@
 <template>
     <div class="row">
-        <div class="col text-center"><h1>Courses</h1><p>To keep up with the constantly rising standards of play</p></div>
+        <div class="col text-center"><h2>Our Events</h2><p>Chess is fun and we are happy to prove it at our events!</p></div>
     </div>
-    <div class="row row-cols-1" v-for="(card,index) in arrayCardEvents" :key="index">
+    <div class="row row-cols-1" v-for="(card,index) in store.arrayCardEvents" :key="index">
         <div class="col d-flex">
-            <div><img :src="card.img" alt=""></div><div><h1>{{card.title}}</h1><p>{{card.text}}</p></div><div><button>Register</button></div>
+            <div><img :src="card.img" alt=""></div><div><h6><b>{{card.title}}</b></h6><p class="fs-12">{{card.text}}</p></div><div><button class="yellow-button">Register</button></div>
         </div>
     </div>
 </template>
 
 <script>
+
+    import { store } from '../store';
     export default {
         name: 'EventsComponent',
         data() {
             return {
-                arrayCardEvents: [
-                    {
-                        img: '../assets/img/mt-2236-home-img4.jpg',
-                        title: 'Grand Summer Tournament of  2021',
-                        text: 'Join us for the Grand Summer Tournament 2021. Held every year on the first Sunday of summer, our Grand Summer Tournament chess masters and beginners from North California.We have competitions for different levels of chess mastery with amazing prizes awarded at each level.'
-                    },
-                    {
-                        img: '../assets/img/mt-2236-home-img5.jpg',
-                        title: 'World Chess Day',
-                        text: 'Celebrated on July 20 every year, World Chess Day is one of the biggest events at our school. Be ready for fun tournaments and big prizes. Registration is obligatory!'
-                    }
-                ]
+                store
             }
         },
     }

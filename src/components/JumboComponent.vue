@@ -1,6 +1,6 @@
 <template>
     <div class="row align-items-center h-50px">
-        <div class="col font-size-xsmall"><i class="fa-solid fa-location-dot"></i>6767 Santa Monica Blvd, Los Angeles, CA 900038</div>
+        <div class="col font-size-xsmall"><a href="https://www.google.it/maps/place/Santa+Monica+Blvd,+Los+Angeles,+CA,+Stati+Uniti/@34.0907154,-118.3396473,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2bebb074ab833:0x3003ecc0a07f08fe!8m2!3d34.090711!4d-118.3374586" target="_blank"><i class="fa-solid fa-location-dot"></i></a>6767 Santa Monica Blvd, Los Angeles, CA 900038</div>
         <div class="col d-flex justify-content-between align-items-center">
             <div class="font-size-xsmall"><i class="fa-solid fa-phone"></i>Call Now 123-456-7890</div>
             <div class="font-size-xsmall"><button class="donate">Donate</button></div>
@@ -9,8 +9,8 @@
     <div class="row flex-column m-top">
         <div class="col-6  welcome"><a href="#">Welcome</a></div>
         <div class="col-6 "><h1>Academic chess for <em>everyone</em></h1></div>
-        <div class="col-6 font-size-small mb-3">We are dedicated to broadening and developing chess as art, recreation, and as a significant element of culture in Northern California.</div>
-        <div class="col-6 "><button class="enroll">Enroll Now</button><button class="learn">Learn More</button></div>
+        <div class="col-6 fs-12 mb-3">We are dedicated to broadening and developing chess as art, recreation, and as a significant element of culture in Northern California.</div>
+        <div class="col-6 "><button class="yellow-button">Enroll Now</button><button class="trasparent-button">Learn More</button></div>
     </div>
 
 </template>
@@ -27,9 +27,8 @@
         color: #fdca27;
     }
 
-    button{
-        border-radius: 5px;
-        padding: 5px 20px;
+    .yellow-button{
+        margin-right: 20px;
     }
 
     .donate{
@@ -41,42 +40,6 @@
     .donate:hover{
         background-color: #fdca27;
         transition: 0.5s;
-    }
-
-    .enroll{
-        background-color: #fdca27;
-        color: #0d1219;
-        border: none;
-        margin-right: 20px;
-        font-size: small;
-    }
-
-    .enroll:hover{
-        background-color: #514f51;
-        color: #ffffff;
-        transition: 0.5s;
-    }
-
-    .learn{
-        background-color: transparent;
-        border: 1px solid #ffffff;
-        color: #ffffff;
-        font-size: small;
-    }
-
-    .learn:hover{
-        background-color: #fdca27;
-        color: #0d1219;
-        border: 1px solid #fdca27;
-        transition: 0.5s;
-    }
-
-    .font-size-xsmall{
-        font-size: x-small;
-    }
-
-    .font-size-small{
-        font-size: small;
     }
     
     .welcome{
@@ -92,7 +55,6 @@
     }
 
     h1{
-        text-transform: uppercase;
         font-weight: bold;
         em{
             color: #fdca27;

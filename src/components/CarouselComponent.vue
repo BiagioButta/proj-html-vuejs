@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="col" v-for="(image,index) in arrayImg" :key="index">
+        <div class="col" v-for="(image,index) in store.arrayImg" :key="index">
             <img id="myImg" :src="image" alt="">
         </div>
         <div id="myModal" class="modal">
@@ -12,11 +12,12 @@
 </template>
 
 <script>
+    import { store } from '../store'
     export default {
         name: 'CarouselComponent',
         data() {
             return {
-                arrayImg: ['../assets/img/mt-2236-home-gallery1.jpg', '../assets/img/mt-2236-home-gallery2.jpg', '../assets/img/mt-2236-home-gallery3.jpg', '../assets/img/mt-2236-home-gallery4.jpg'],
+                store
 
             }
         },

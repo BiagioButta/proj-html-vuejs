@@ -5,6 +5,7 @@ $fa-font-path: '../webfonts';
 @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '@fortawesome/fontawesome-free/scss/regular.scss';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
 
 @import 'bootstrap/scss/bootstrap';
 
@@ -19,6 +20,44 @@ $fa-font-path: '../webfonts';
     margin: 0 auto;
 }
 
+// buttons
+
+button{
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.yellow-button{
+    background-color: #fdca27;
+    color: #0d1219;
+    border: none;
+}
+
+.yellow-button:hover{
+    background-color: #514f51;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.trasparent-button{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.trasparent-button:hover{
+    background-color: #fdca27;
+    color: #0d1219;
+    border: 1px solid #fdca27;
+    transition: 0.5s;
+}
+
+// Font size
+
+.fs-12{
+    font-size: 12px;
+}
+
 .font-size-xsmall{
     font-size: x-small;
 }
@@ -26,36 +65,8 @@ $fa-font-path: '../webfonts';
 .font-size-small{
     font-size: small;
 }
+// text
 
-button{
-    border-radius: 5px;
-    padding: 5px 20px;
-}
-
-.learn{
-    background-color: transparent;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    font-size: small;
-}
-
-.learn:hover{
-    background-color: #fdca27;
-    color: #0d1219;
-    border: 1px solid #fdca27;
-    transition: 0.5s;
-}
-
-.enroll{
-    background-color: #fdca27;
-    color: #0d1219;
-    border: none;
-    margin-right: 20px;
-    font-size: small;
-}
-
-.enroll:hover{
-    background-color: #514f51;
-    color: #ffffff;
-    transition: 0.5s;
+h1{
+    text-transform: uppercase;
 }
