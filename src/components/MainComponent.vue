@@ -2,8 +2,19 @@
     <div class="wrapper">
         <ServiceComponent/>
     </div>
-    <div class="bg-yellow">
+    <div>
         <CarouselComponent/>
+    </div>
+    <div class="bg-yellow">
+        <div class="wrapper">
+            <div class="row h-120px">
+                <div class="col d-flex align-items-center justify-content-between">
+                    <img class="img-knigt" src="../assets/img/mt-2236-home-icon5.png" alt="">
+                    <div><h1>Play &amp; Learn</h1><p>Take a look into our day to day life here at Chess School</p></div>
+                    <div><button class="enroll">Learn More</button></div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="wrapper">
         <CardComponent/>
@@ -18,16 +29,20 @@
             </div>
         </div>
     </div>
+    <div class="wrapper">
+        <EventsComponent/>
+    </div>
 </template>
 
 <script>
 import ServiceComponent from './ServiceComponent.vue';
 import CarouselComponent from './CarouselComponent.vue';
 import CardComponent from './CardComponent.vue';
+import EventsComponent from './EventsComponent.vue';
 
     export default {
     name: "MainComponent",
-    components: { ServiceComponent, CarouselComponent, CardComponent }
+    components: { ServiceComponent, CarouselComponent, CardComponent, EventsComponent }
 }
 </script>
 
@@ -47,6 +62,18 @@ import CardComponent from './CardComponent.vue';
 
     span{
         color: #fdca27;
+    }
+
+    .enroll{
+        border: 1px solid #0d1219;
+    }
+
+    .img-knigt{
+        width: 70px;
+    }
+
+    .h-120px{
+        height: 120px;
     }
 
 </style>
