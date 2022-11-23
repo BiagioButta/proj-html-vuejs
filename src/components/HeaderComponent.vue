@@ -51,8 +51,12 @@ import { store } from '../store';
         components: { JumboComponent },
         data() {
             return {
-                store
+                store,
+
             }
+        },
+        methods: {
+
         },
     }
 </script>
