@@ -4,7 +4,7 @@
     </div>
     <div class="row row-cols-3">
         <div class="col" v-for="(card,index) in store.arraycard" :key="index">
-            <div class="card shadow">
+            <div class="card shadow zoom">
                 <img :src="card.img" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                   <h5 class="card-title">{{card.title}}</h5>
@@ -43,6 +43,11 @@
         background-color: #514f51;
         color: #ffffff;
         transition: 0.5s;
+    }
+
+    .zoom:hover{
+        width: 235px;
+        height: 350px;
     }
 
   

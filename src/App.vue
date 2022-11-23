@@ -18,7 +18,8 @@
   import HeaderComponent from './components/HeaderComponent.vue';
   import MainComponent from './components/MainComponent.vue';
   import FooterComponent from './components/FooterComponent.vue';
-import CallFixedComponent from './components/CallFixedComponent.vue';
+  import CallFixedComponent from './components/CallFixedComponent.vue';
+
   
 
   export default {
