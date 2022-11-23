@@ -16,10 +16,11 @@
                 </div>
                 <div class="col">
                     <p class="text-white fs-12">Subscribe to get the latest news, course updates, discounts, events</p>
-                    <form action="">
-                        <input class="fs-12" type="email" name="" id="" placeholder="Enter your email here">
-                        <button class="yellow-button mt-4" @click.prevent="errorEmail">Subscribe</button>
-                    </form>
+                    
+                        <input class="fs-12" type="text" name="" id="" placeholder="Enter your email here">
+                        <button @click="adderror" class="yellow-button mt-4">Subscribe</button>
+                        <div v-if="error" class="text-white">You were not subscribed. Please try again</div>
+                   
                 </div>
             </div>
         </div>
@@ -35,6 +36,16 @@ import { PatchFlagNames } from '@vue/shared';
     components: { PatchFlagNames },
     data() {
         return {
+            data() {
+                return {
+                    error: false
+                }
+            },
+            methods: {
+                adderror(){
+                    this.error = true;
+                }
+            },
         }
     }
 }

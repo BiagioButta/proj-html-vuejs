@@ -26,7 +26,7 @@
         a{
             text-decoration: none;
             color:#0d1219;
-            background-color: #fdca27;
+            background-color: #e8b604;
             padding: 0 10px;
             border-radius: 10px;
             font-size: x-small;
@@ -37,7 +37,7 @@
     h1{
         font-weight: bold;
         em{
-            color: #fdca27;
+            color: #e8b604;
         }
     }
 

@@ -53,7 +53,7 @@ import NewsComponent from './NewsComponent.vue';
 <style lang="scss" scoped>
 
     .bg-yellow{
-        background-color: #fdca27;
+        background-color: #e8b604;
     }
 
     .yellow-button{
@@ -69,7 +69,7 @@ import NewsComponent from './NewsComponent.vue';
     }
 
     span{
-        color: #fdca27;
+        color: #e8b604;
     }
 
 

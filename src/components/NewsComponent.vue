@@ -37,7 +37,7 @@
    .hr{
     width: 60px;
     height: 3px;
-    background-color: #fdca27;
+    background-color: #e8b604;
     margin: 20px 0;
    }
 </style>

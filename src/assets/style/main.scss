@@ -20,10 +20,10 @@ $fa-font-path: '../webfonts';
     margin: 0 auto;
 }
 
-.fixed-navbar{
-    position: sticky;
-    top: 0;
-}
+// .fixed-navbar{
+//     position: sticky;
+//     top: 0;
+// }
 
 // buttons
 
@@ -34,7 +34,7 @@ button{
 }
 
 .yellow-button{
-    background-color: #fdca27;
+    background-color: #e8b604;
     color: #0d1219;
     border: none;
 }
@@ -52,9 +52,9 @@ button{
 }
 
 .trasparent-button:hover{
-    background-color: #fdca27;
+    background-color: #e8b604;
     color: #0d1219;
-    border: 1px solid #fdca27;
+    border: 1px solid #e8b604;
     transition: 0.5s;
 }
 

@@ -21,7 +21,7 @@
             <div class="col d-flex justify-content-end">
                 <ul v-for="(link,index) in store.linksMenu" :key="index" class="font-size-xsmall mt-2">
                     <li>
-                        <a href="https://www.motocms.com/website-templates/demo/186841.html">{{link}}</a>
+                        <a href="#">{{link}}</a>
                     </li>
                 </ul>
             </div>
@@ -78,7 +78,7 @@ li{
     }
 
     a:hover{
-        color: #fdca27;
+        color: #e8b604;
     }
 }
 
@@ -92,12 +92,12 @@ img{
     }
 
     .donate:hover{
-        background-color: #fdca27;
+        background-color: #e8b604;
         transition: 0.5s;
     }
 
     i{
-        color: #fdca27;
+        color: #e8b604;
     }
 
     .h-50px{
